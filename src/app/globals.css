@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@theme {
+  --font-space: var(--font-space);
+  --font-syncopate: var(--font-syncopate);
+  --font-caveat: var(--font-caveat);
+  
+  --color-background: #E6E6E6;
+  --color-foreground: #111111;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-space);
+    overflow-x: hidden;
+  }
+}
+
+/* Hide scrollbar for smooth experience */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
