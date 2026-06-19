@@ -186,7 +186,7 @@ export default function ProductsPage() {
                   <div className="pt-5 pb-5 px-5 flex flex-col flex-1 bg-white z-10 relative border-t border-gray-100">
                     <p className="text-[9px] text-gray-400 font-syncopate mb-1 uppercase tracking-[0.2em]">{product.category}</p>
                     <h3 className="font-space text-lg font-bold text-[#111] mb-1 line-clamp-1">{product.name}</h3>
-                    <p className="text-xs text-gray-500 font-space mb-4 line-clamp-2 min-h-8">{product.desc}</p>
+                    <p className="text-xs text-gray-500 font-space mb-4 line-clamp-2 min-h-8">{product.overview}</p>
                     
                     <div className="mt-auto flex items-end justify-between">
                       <Link href={`/products/${product.category.toLowerCase().replace(/ & | /g, '-')}/${product.slug}`} className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-[#111] group-hover:bg-[#111] group-hover:text-white transition-colors ml-auto">

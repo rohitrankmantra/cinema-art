@@ -254,7 +254,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
         </div>
 
         {/* Rich Features Section */}
-        {product.richFeatures && product.richFeatures.length > 0 && (
+        {/* {product.richFeatures && product.richFeatures.length > 0 && (
           <div className="mt-32 border-t border-gray-300 pt-24">
             <div className="text-center mb-24">
               <h2 className="font-syncopate text-3xl md:text-5xl font-bold text-[#111] uppercase tracking-tighter">
@@ -281,7 +281,7 @@ export default function ProductPage({ params }: { params: Promise<{ category: st
               ))}
             </div>
           </div>
-        )}
+        )} */}
 
         {/* Specs Section */}
         {product.specs && product.specs.length > 0 && (
